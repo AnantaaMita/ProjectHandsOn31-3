@@ -21,124 +21,283 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 5,
-  "name": "Open Chrome and start EaseMyTrip",
+  "line": 22,
+  "name": "Open Chrome and open Url \"https://www.saucedemo.com/\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "user enter source \"Kolkata\" and destination \"Pune\" and Departure date",
+  "line": 23,
+  "name": "user enter loginId \"standard_user\" and password \"secret_sauce\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "user click on Search button",
+  "line": 24,
+  "name": "user click on Login button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
-  "name": "validate user is in FLightbooking page",
+  "line": 25,
+  "name": "validate user is in Products page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,{
   "line": 26,
   "name": "find the \"Most\" Expensive product",
-  "k);
+  "keyword": "Then "
+});
 formatter.step({
-  "line": 10,
-  {
   "line": 27,
   "name": "validate price is lessthan \"100\"",
-  "keyword": "Andformatter.match({
-  "location": "ClearTripHomePage.open_Chrome_and_start_EaseMyTrip()"
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "click Add to Cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "Validate Remove button is enable and remove the item",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "click Add to Cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 31,
+  "name": "click on Cart Button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 32,
+  "name": "click Continue Shopping",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 33,
+  "name": "find the \"Least\" Expensive product",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 34,
+  "name": "click Add to Cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 35,
+  "name": "Validate Cart value increased",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
+  "name": "click on Cart Button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "validate Item count is same as Cart value",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "click on Checkout button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "validate user is in Checkout page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 40,
+  "name": "User provide Firstname \"Anantaa\" Lastname \"Mitra\" Zip \"70014\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 41,
+  "name": "click on Continue button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 42,
+  "name": "validate user is in Checkout Overview page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 43,
+  "name": "Validate Total amount is displayed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 44,
+  "name": "click on Finish button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 45,
+  "name": "validate success messege is displaying",
+  "keyword": "And "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://www.saucedemo.com/",
+      "offset": 26
+    }
+  ],
+  "location": "HashedinAddToCartPage.open_Chrome_and_open_Url(String)"
 });
 formatter.result({
-  "duration": 34421797700,
+  "duration": 46895292208,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Kolkata",
-      "offset": 19
+      "val": "standard_user",
+      "offset": 20
     },
     {
-      "val": "Pune",
-      "offset": 45
+      "val": "secret_sauce",
+      "offset": 49
     }
   ],
-  "location": "ClearTripHomePage.user_enter_source_and_destination_and_Departure_date(String,String)"
+  "location": "HashedinAddToCartPage.user_enter_loginId_and_password(String,String)"
 });
 formatter.result({
-  "duration": 6863976100,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027FromTag\u0027]\"}\n  (Session info: chrome\u003d123.0.6312.86)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00274.0.0-alpha-1\u0027, revision: \u0027d1d3728cae\u0027, time: \u00272019-04-24T13:42:21\u0027\nSystem info: host: \u0027DESKTOP-ODQ4RN5\u0027, ip: \u0027192.168.1.13\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_302\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\\Users\\Anantaa\\AppData\\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50923}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 15287424ba66264d1a79d9f7a0f0f5aa\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027FromTag\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)\r\n\tat stepDefinitions.ClearTripHomePage.user_enter_source_and_destination_and_Departure_date(ClearTripHomePage.java:107)\r\n\tat ✽.When user enter source \"Kolkata\" and destination \"Pune\" and Departure date(Parallel.feature:6)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "ClearTripHomePage.user_click_on_Search_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "ClearTripHomePage.validate_user_is_in_FLightbooking_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "ClearTripHomePage.book_fastest_and_cheapest_flight()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "ClearTripHomePage.validate_right_flight_is_selected_for_booking()"
-});
-formatter.result({
-  "status": "skipped"
-});
-});{
-  "location": "HashedinAddToCartPage.click_Add_to_Cart()"
-});
-formatter.result({
-  "duration": 18100,
+  "duration": 610654417,
   "status": "passed"
 });
 formatter.match({
-  "location": "HashedinAddToCartPage.validate_Cart_value_increased()"
+  "location": "HashedinAddToCartPage.user_click_on_Login_button()"
 });
 formatter.result({
-  "duration": 34800,
+  "duration": 420510000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HashedinAddToCartPage.validate_user_is_in_Products_page()"
+});
+formatter.result({
+  "duration": 15709,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Most",
+      "offset": 10
+    }
+  ],
+  "location": "HashedinAddToCartPage.find_the_Expensive_product(String)"
+});
+formatter.result({
+  "duration": 138083,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100",
+      "offset": 28
+    }
+  ],
+  "location": "HashedinAddToCartPage.validate_price_is_lessthan(String)"
+});
+formatter.result({
+  "duration": 32291,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HashedinAddToCartPage.click_Add_to_Cart()"
+});
+formatter.result({
+  "duration": 14083,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HashedinAddToCartPage.validate_Remove_button_is_enable_and_remove_the_item()"
+});
+formatter.result({
+  "duration": 10708,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HashedinAddToCartPage.click_Add_to_Cart()"
+});
+formatter.result({
+  "duration": 10916,
   "status": "passed"
 });
 formatter.match({
   "location": "HashedinAddToCartPage.click_on_Cart_Button()"
 });
 formatter.result({
-  "duration": 19900,
+  "duration": 12083,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HashedinAddToCartPage.click_Continue_Shopping()"
+});
+formatter.result({
+  "duration": 21875,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Least",
+      "offset": 10
+    }
+  ],
+  "location": "HashedinAddToCartPage.find_the_Expensive_product(String)"
+});
+formatter.result({
+  "duration": 41041,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HashedinAddToCartPage.click_Add_to_Cart()"
+});
+formatter.result({
+  "duration": 7500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HashedinAddToCartPage.validate_Cart_value_increased()"
+});
+formatter.result({
+  "duration": 93708,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HashedinAddToCartPage.click_on_Cart_Button()"
+});
+formatter.result({
+  "duration": 5834,
   "status": "passed"
 });
 formatter.match({
   "location": "HashedinAddToCartPage.validate_Item_count_is_same_as_Cart_value()"
 });
 formatter.result({
-  "duration": 25500,
+  "duration": 21042,
   "status": "passed"
 });
 formatter.match({
   "location": "HashedinAddToCartPage.click_on_Checkout_button()"
 });
 formatter.result({
-  "duration": 26500,
+  "duration": 10584,
   "status": "passed"
 });
 formatter.match({
   "location": "HashedinAddToCartPage.validate_user_is_in_Checkout_page()"
 });
 formatter.result({
-  "duration": 26400,
+  "duration": 9250,
   "status": "passed"
 });
 formatter.match({
@@ -159,42 +318,42 @@ formatter.match({
   "location": "HashedinAddToCartPage.user_provide_Firstname_Lastname_Zip(String,String,String)"
 });
 formatter.result({
-  "duration": 115400,
+  "duration": 276666,
   "status": "passed"
 });
 formatter.match({
   "location": "HashedinAddToCartPage.click_on_Continue_button()"
 });
 formatter.result({
-  "duration": 171000,
+  "duration": 6625,
   "status": "passed"
 });
 formatter.match({
   "location": "HashedinAddToCartPage.validate_user_is_in_Checkout_Overview_page()"
 });
 formatter.result({
-  "duration": 35500,
+  "duration": 42792,
   "status": "passed"
 });
 formatter.match({
   "location": "HashedinAddToCartPage.validate_Total_amount_is_displayed()"
 });
 formatter.result({
-  "duration": 31600,
+  "duration": 10083,
   "status": "passed"
 });
 formatter.match({
   "location": "HashedinAddToCartPage.click_on_Finish_button()"
 });
 formatter.result({
-  "duration": 30500,
+  "duration": 7375,
   "status": "passed"
 });
 formatter.match({
   "location": "HashedinAddToCartPage.validate_success_messege_is_displaying()"
 });
 formatter.result({
-  "duration": 37300,
+  "duration": 5750,
   "status": "passed"
 });
 });

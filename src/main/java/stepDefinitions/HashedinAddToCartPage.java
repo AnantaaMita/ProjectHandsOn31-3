@@ -16,7 +16,7 @@ public class HashedinAddToCartPage extends HashedinTestRunner {
 		@Given("^Open Chrome and open Url \"([^\"]*)\"$")
 		public void open_Chrome_and_open_Url(String URL) throws Throwable {
 			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\Chrome_Driver\\chromedriver.exe");
+					System.getProperty("user.dir") + "/Chrome_Driver/chromedriver");
 			driver = new ChromeDriver();
 			Reporter.log(" \nChrome is opening");
 			driver.manage().window().maximize();
